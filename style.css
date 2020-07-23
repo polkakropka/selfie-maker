@@ -1,0 +1,87 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  background: #000;
+}
+h1 {
+    color: #fff;
+    font-size: 8rem;
+    text-align: center;
+}
+.selfie-maker {
+  max-width: 800px;
+  margin: 2rem auto;
+  border-radius: 2px;
+}
+
+/*clearfix*/
+.selfie-maker:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.photo {
+  width: 100%;
+  float: left;
+  border: 5px solid white;
+
+}
+
+.player {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width:200px;
+   display: none;
+}
+
+.controls button {
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px 45px;
+    background-color: #0f7595;
+    color: #FFFCFC;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    margin: 5rem auto 1rem auto;
+}
+
+.controls button:hover {
+    color:#0f7595;
+    background-color: #FFFCFC;
+    border: 1px solid #0f7595;
+    transition: background-color .5s;
+    cursor: pointer;
+}
+.colorButtons {
+    display: block;
+    margin: 20px 0;
+}
+
+/*
+  Strip!
+*/
+
+.strip {
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.strip img {
+    width: 200px;
+    overflow-x: scroll;
+    padding: 0.8rem;
+    box-shadow: 0 0 3px rgba(99, 99, 99, 0.2);
+
+}
+
